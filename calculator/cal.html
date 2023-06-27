@@ -10,10 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="calculator dark">
-            <div class="theme-toggler active">  
-                <i class="toggler-icon"></i>
-            </div>
+        <div class="calculator">
             <div class="display-screen">
               <marquee id="mark">Welcome to my calculator</marquee>
               <div id="display"></div>
@@ -81,15 +78,5 @@
             }
           };
         });
-       
-        const themeToggleBtn = document.querySelector(".theme-toggler"); // theme button,if you click this button that time theme was change.(dark to light)
-        const calculator = document.querySelector(".calculator");
-        const toggleIcon = document.querySelector(".toggler-icon");
-        let Dark = true;
-        themeToggleBtn.onclick = () => {
-          calculator.classList.toggle("dark"); // dark and light theme activater
-          themeToggleBtn.classList.toggle("active");
-          Dark = !Dark;
-        };
     </script>
 </html>
